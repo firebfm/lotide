@@ -42,3 +42,5 @@ assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 let test1 = ['dude', 'boy', 'foo', 'bar'];
 let test2 = ['dude', 'foo'];
 console.log(without(test1, test2));
+
+module.exports = without;

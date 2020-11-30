@@ -31,3 +31,5 @@ assertEqual(findKey(ab, x => x % 3 === 0), 'd')
 cd = {blue: 'pants', green: 'shirt', red: 'shirt', orange: 'shoes'}
 assertEqual(findKey(cd, x => x === 'bed'), undefined)
 assertEqual(findKey(cd, x => x === 'shirt'), 'green')
+
+module.exports = findKey;

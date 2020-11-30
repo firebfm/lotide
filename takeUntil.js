@@ -45,3 +45,5 @@ console.log(results2);
 
 assertArraysEqual(takeUntil(['dog', 'cat', 'apple', 'orange', 'pear', 'brain'], x => x[1] === 'r'), ['dog', 'cat', 'apple']);
 assertArraysEqual(takeUntil([1, 2, 3, 4, 5, 7, 11, 12, 14], x => x % 4 === 0), [1, 2, 3]);
+
+module.exports = takeUntil;

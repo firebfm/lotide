@@ -35,3 +35,5 @@ const colour = {
 assertEqual(findKeyByValue(colour, 'yellow'), 'bus');
 assertEqual(findKeyByValue(colour, 'green'), 'tree');
 assertEqual(findKeyByValue(colour, 'red'), 'apple');
+
+module.exports = findKeyByValue;

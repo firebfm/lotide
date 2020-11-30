@@ -35,3 +35,5 @@ const assertArraysEqual = (arr1, arr2) => {
 assertArraysEqual(map(['dog', 'cat'], word => word[1]), ['o', 'a']);
 assertArraysEqual(map([1, 2, 3], num => num * 2), [2, 4, 6]);
 assertArraysEqual(map([4, 6, 20], num => num + 20), [24, 26, 40]);
+
+module.exports = map;

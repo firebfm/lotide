@@ -25,3 +25,5 @@ for (let key in result1) {
   console.log(key + ': ' + result1[key])
 }
 assertEqual(countLetters('Robot'), {R: 1, o: 2, b: 1, t: 1})
+
+module.exports = countLetters;
