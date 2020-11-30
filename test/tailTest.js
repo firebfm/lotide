@@ -1,10 +1,15 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-let foo = tail(words);
-console.log(foo);
-// arrays always fail because references are compared
-assertEqual(tail(words), ['Lighthouse', 'Labs']);
+// npm test test/middleTest.js
+describe("tail function gets rid of first element", () => {
+  it("returns ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    assert.strictEqual(words.length, 3); // original array should still have 3 elements!
+    // always fail because it compares array references
+    // assert.strictEqual(tail(words), ['Lighthouse', 'Labs']);
+
+    // compare values
+    assert.strictEqual(tail(words).join(), ['Lighthouse', 'Labs'].join());
+  });
+});
