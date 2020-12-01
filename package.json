@@ -1,0 +1,27 @@
+{
+  "name": "@firebfm/lotide",
+  "version": "1.0.0",
+  "description": "lighthouse labs first project with a ton of functions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firebfm/lotide.git"
+  },
+  "keywords": [],
+  "author": {"name" : "Simon aka firebfm"},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firebfm/lotide/issues"
+  },
+  "homepage": "https://github.com/firebfm/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
